@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Car Collection</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="sedan">Sedan</button>
+            <button class="filter-btn" data-filter="suv">SUV</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+        </div>
+    </header>
+
+    <main class="gallery-grid">
+        <div class="gallery-item" data-category="sedan">
+            <img src="car images\WhatsApp Image 2025-06-09 at 5.32.05 PM.jpeg" alt="Sedan Car 1">
+        </div>
+        <div class="gallery-item" data-category="suv">
+            <img src="car images\WhatsApp Image 2025-06-09 at 5.32.04 PM (2).jpeg" alt="SUV Car 1">
+        </div>
+        <div class="gallery-item" data-category="sports">
+            <img src="car images\WhatsApp Image 2025-06-09 at 5.32.04 PM (1).jpeg" alt="Sports Car 1">
+        </div>
+        <div class="gallery-item" data-category="sedan">
+            <img src="car images\WhatsApp Image 2025-06-09 at 5.32.04 PM.jpeg" alt="Sedan Car 2">
+        </div>
+        <div class="gallery-item" data-category="suv">
+            <img src="car images\WhatsApp Image 2025-06-09 at 5.32.03 PM (1).jpeg" alt="SUV Car 2">
+        </div>
+        <div class="gallery-item" data-category="sports">
+            <img src="car images\WhatsApp Image 2025-06-09 at 5.32.03 PM.jpeg" alt="Sports Car 2">
+        </div>
+    </main>
+
+    <div class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Larger Car Image">
+        <a class="prev-btn">&#10094;</a>
+        <a class="next-btn">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
